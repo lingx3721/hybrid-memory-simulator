@@ -99,7 +99,7 @@ class RBLA_NVMain : public NVMain
 	}*/
 	//void inline GetTimeParams();
   private:
-	std::auto_ptr<StatsStore> statsTable;
+	std::unique_ptr<StatsStore> statsTable;
 	ncounter_t statsHit , statsMiss;
 	double statsHitRate;
 	//name identify migrator

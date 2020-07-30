@@ -3127,12 +3127,12 @@ statsStore	MemControl/RBLA-Dyn/older/RBLA_Dyn.h	/^			StatsStoreOp *statsStore;$/
 statsStore	MemControl/RBLA-Dyn/older/StatsStore.h	/^			std::list<StatsEntry *>statsStore;$/;"	m	class:NVM::StatsStoreOp
 statsStoreSize	MemControl/RBLA-Dyn/older/RBLA_Dyn.h	/^			ncounter_t statsStoreSize;	\/\/stats store entry num(default is 16)$/;"	m	class:NVM::RBLA_Dyn
 statsStoreSize	MemControl/RBLA-Dyn/older/StatsStore.h	/^			ncounter_t statsStoreSize;	\/\/stats store entry num(default is 16)$/;"	m	class:NVM::StatsStoreOp
-statsTable	NVM/RBLA_Migrator/RBLA_Migrator.h	/^	std::auto_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
-statsTable	NVM/RBLA_Migrator/bk/RBLA_NVMain.h	/^	std::auto_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
-statsTable	NVM/RBLA_Migrator/new_bk/RBLA_NVMain.h	/^	std::auto_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
-statsTable	NVM/RBLA_NVMain/RBLA_NVMain.h	/^	std::auto_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
-statsTable	NVM/RBLA_NVMain/bk/RBLA_NVMain.h	/^	std::auto_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
-statsTable	NVM/RBLA_NVMain/new_bk/RBLA_NVMain.h	/^	std::auto_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
+statsTable	NVM/RBLA_Migrator/RBLA_Migrator.h	/^	std::unique_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
+statsTable	NVM/RBLA_Migrator/bk/RBLA_NVMain.h	/^	std::unique_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
+statsTable	NVM/RBLA_Migrator/new_bk/RBLA_NVMain.h	/^	std::unique_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
+statsTable	NVM/RBLA_NVMain/RBLA_NVMain.h	/^	std::unique_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
+statsTable	NVM/RBLA_NVMain/bk/RBLA_NVMain.h	/^	std::unique_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
+statsTable	NVM/RBLA_NVMain/new_bk/RBLA_NVMain.h	/^	std::unique_ptr<StatsStore> statsTable;$/;"	m	class:NVM::RBLA_NVMain
 stats_table	NVM/RBLA_Migrator/StatsStore.hh	/^				CacheSet<StatsStoreBlock>* stats_table;	$/;"	m	class:NVM::StatsStore
 stats_table	NVM/RBLA_NVMain/StatsStore.hh	/^				CacheSet<StatsStoreBlock>* stats_table;	$/;"	m	class:NVM::StatsStore
 stats_table_entry	NVM/RBLA_Migrator/RBLA_Migrator.h	/^	uint64_t stats_table_entry;$/;"	m	class:NVM::RBLA_NVMain

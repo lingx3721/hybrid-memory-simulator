@@ -121,7 +121,7 @@ void RBLA_NVMain::SetConfig( Config *conf, std::string memoryName, bool createCh
 	std::cout<<"diff time of dirty miss is "<<tdiff_dirty_<<std::endl;
 	std::cout<<"diff time of clean miss is "<<tdiff_clean_<<std::endl;
 	//create stats table
-	statsTable = std::auto_ptr<StatsStore>( new StatsStore(stats_table_entry));
+	statsTable = std::unique_ptr<StatsStore>( new StatsStore(stats_table_entry));
 }
 
 

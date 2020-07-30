@@ -106,7 +106,7 @@ class RBLA_NVMain : public NVMain
     ncounter_t successfulPrefetches;
     ncounter_t unsuccessfulPrefetches;
 	
-	std::auto_ptr<StatsStore> statsTable;
+	std::unique_ptr<StatsStore> statsTable;
 	ncounter_t statsHit , statsMiss;
 	double statsHitRate;
 	//added on 2015/5/4

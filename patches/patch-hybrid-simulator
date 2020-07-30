@@ -4218,7 +4218,7 @@ diff -upNr marss-old/ptlsim/tags marss/ptlsim/tags
 +AbortReason	lib/gtest/include/gtest/internal/gtest-death-test-internal.h	/^  enum AbortReason {$/;"	g	class:testing::internal::DeathTest
 +AddArgument	lib/gtest/src/gtest-death-test.cc	/^  void AddArgument(const char* argument) {$/;"	f	class:testing::internal::Arguments
 +AddArguments	lib/gtest/src/gtest-death-test.cc	/^  void AddArguments(const ::std::vector<Str>& arguments) {$/;"	f	class:testing::internal::Arguments
-+AddEntry	lib/yaml/map.cpp	/^	void Map::AddEntry(std::auto_ptr<Node> pKey, std::auto_ptr<Node> pValue)$/;"	f	class:YAML::Map
++AddEntry	lib/yaml/map.cpp	/^	void Map::AddEntry(std::unique_ptr<Node> pKey, std::unique_ptr<Node> pValue)$/;"	f	class:YAML::Map
 +AddEnvironment	lib/gtest/src/gtest.cc	/^Environment* UnitTest::AddEnvironment(Environment* env) {$/;"	f	class:testing::UnitTest
 +AddGlobalTestEnvironment	lib/gtest/include/gtest/gtest.h	/^inline Environment* AddGlobalTestEnvironment(Environment* env) {$/;"	f	namespace:testing
 +AddRef	lib/gtest/include/gtest/internal/gtest-tuple.h	/^struct AddRef { typedef T& type; };  \/\/ NOLINT$/;"	s	namespace:std::tr1::gtest_internal
@@ -4693,7 +4693,7 @@ diff -upNr marss-old/ptlsim/tags marss/ptlsim/tags
 +Clone	lib/gtest/include/gtest/internal/gtest-param-util.h	/^    virtual ParamIteratorInterface<T>* Clone() const {$/;"	f	class:testing::internal::ValuesInIteratorRangeGenerator::Iterator
 +Clone	lib/yaml/aliascontent.cpp	/^	Content *AliasContent::Clone() const$/;"	f	class:YAML::AliasContent
 +Clone	lib/yaml/map.cpp	/^	Content *Map::Clone() const$/;"	f	class:YAML::Map
-+Clone	lib/yaml/node.cpp	/^	std::auto_ptr<Node> Node::Clone() const$/;"	f	class:YAML::Node
++Clone	lib/yaml/node.cpp	/^	std::unique_ptr<Node> Node::Clone() const$/;"	f	class:YAML::Node
 +Clone	lib/yaml/scalar.cpp	/^	Content *Scalar::Clone() const$/;"	f	class:YAML::Scalar
 +Clone	lib/yaml/sequence.cpp	/^	Content *Sequence::Clone() const$/;"	f	class:YAML::Sequence
 +CloneCString	lib/gtest/src/gtest.cc	/^const char * String::CloneCString(const char* c_str) {$/;"	f	class:testing::internal::String
@@ -8735,7 +8735,7 @@ diff -upNr marss-old/ptlsim/tags marss/ptlsim/tags
 +_PLATFORM_HACKS_H_	lib/bson/platform_hacks.h	21;"	d
 +_PTLHWDEF_H	x86/ptlhwdef.h	13;"	d
 +_PTLSIM_H_	sim/ptlsim.h	12;"	d
-+_PopGroup	lib/yaml/emitterstate.cpp	/^	std::auto_ptr <EmitterState::Group> EmitterState::_PopGroup()$/;"	f	class:YAML::EmitterState
++_PopGroup	lib/yaml/emitterstate.cpp	/^	std::unique_ptr <EmitterState::Group> EmitterState::_PopGroup()$/;"	f	class:YAML::EmitterState
 +_ReadAheadTo	lib/yaml/stream.cpp	/^	bool Stream::_ReadAheadTo(size_t i) const$/;"	f	class:YAML::Stream
 +_SUPERSTL_H_	lib/superstl.h	18;"	d
 +_Set	lib/yaml/emitterstate.h	/^	void EmitterState::_Set(Setting<T>& fmt, T value, FMT_SCOPE scope) {$/;"	f	class:YAML::EmitterState
@@ -12954,9 +12954,9 @@ diff -upNr marss-old/ptlsim/tags marss/ptlsim/tags
 +m_pIdentity	lib/yaml/node.h	/^		const Node *m_pIdentity;$/;"	m	class:YAML::Node
 +m_pPrefetched	lib/yaml/stream.h	/^		unsigned char* const m_pPrefetched;$/;"	m	class:YAML::Stream
 +m_pRef	lib/yaml/aliascontent.h	/^		Content* m_pRef;$/;"	m	class:YAML::AliasContent
-+m_pScanner	lib/yaml/parser.h	/^		std::auto_ptr<Scanner> m_pScanner;$/;"	m	class:YAML::Parser
-+m_pState	lib/yaml/emitter.h	/^		std::auto_ptr <EmitterState> m_pState;$/;"	m	class:YAML::Emitter
-+m_pState	lib/yaml/parser.h	/^		std::auto_ptr<ParserState> m_pState;$/;"	m	class:YAML::Parser
++m_pScanner	lib/yaml/parser.h	/^		std::unique_ptr<Scanner> m_pScanner;$/;"	m	class:YAML::Parser
++m_pState	lib/yaml/emitter.h	/^		std::unique_ptr <EmitterState> m_pState;$/;"	m	class:YAML::Emitter
++m_pState	lib/yaml/parser.h	/^		std::unique_ptr<ParserState> m_pState;$/;"	m	class:YAML::Parser
 +m_params	lib/yaml/regex.h	/^		std::vector <RegEx> m_params;$/;"	m	class:YAML::RegEx
 +m_pos	lib/yaml/ostream.h	/^		unsigned m_pos;$/;"	m	class:YAML::ostream
 +m_postCommentIndent	lib/yaml/emitterstate.h	/^		Setting <unsigned> m_preCommentIndent, m_postCommentIndent;$/;"	m	class:YAML::EmitterState
@@ -14493,7 +14493,7 @@ diff -upNr marss-old/ptlsim/tags marss/ptlsim/tags
 +push	lib/superstl.h	/^    T& push(const T& v) {$/;"	f	struct:superstl::stack
 +push	lib/superstl.h	/^    void push(T* obj) { add_to_tail(obj); }$/;"	f	class:superstl::queue
 +push	lib/superstl.h	/^    void push(const T& obj) {$/;"	f	class:superstl::dynarray
-+push	lib/yaml/setting.h	/^		void push(std::auto_ptr <SettingChangeBase> pSettingChange) {$/;"	f	class:YAML::SettingChanges
++push	lib/yaml/setting.h	/^		void push(std::unique_ptr <SettingChangeBase> pSettingChange) {$/;"	f	class:YAML::SettingChanges
 +pushes	core/ooo-core/ooo-stats.h	/^                StatObj<W64> pushes;$/;"	m	struct:OOO_CORE_MODEL::OooCoreThreadStats::branchpred::ras
 +pushhead	lib/logic.h	/^  T* pushhead() {$/;"	f	struct:FixedQueue
 +put	lib/yaml/ostream.cpp	/^	void ostream::put(char ch)$/;"	f	class:YAML::ostream
@@ -15197,7 +15197,7 @@ diff -upNr marss-old/ptlsim/tags marss/ptlsim/tags
 +set	lib/python/yaml/representer.py	/^    from sets import Set as set$/;"	i
 +set	lib/superstl.h	/^    bitvec<N>& set(size_t index) {$/;"	f	class:superstl::bitvec
 +set	lib/superstl.h	/^    bool set() const { return !empty(); }$/;"	f	class:superstl::stringbuf
-+set	lib/yaml/setting.h	/^	inline std::auto_ptr <SettingChangeBase> Setting<T>::set(const T& value) {$/;"	f	class:YAML::Setting
++set	lib/yaml/setting.h	/^	inline std::unique_ptr <SettingChangeBase> Setting<T>::set(const T& value) {$/;"	f	class:YAML::Setting
 +set	stats/statsBuilder.h	/^        inline void set(Stats *stats, const char* str)$/;"	f	class:StatString
 +set	stats/statsBuilder.h	/^        inline void set(Stats *stats, const stringbuf& str)$/;"	f	class:StatString
 +set	tools/sync_helper.cpp	/^void set(int sem_id, int val)$/;"	f

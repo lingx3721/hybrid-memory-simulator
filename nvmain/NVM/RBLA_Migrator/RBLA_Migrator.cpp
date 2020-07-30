@@ -95,7 +95,7 @@ void RBLA_NVMain::SetConfig( Config *conf, std::string memoryName, bool createCh
 	if(config->KeyExists("MigrationThres"))
 		migra_thres = static_cast<uint64_t>(config->GetValue("MigrationThres"));
 	//create stats table
-	statsTable = std::auto_ptr<StatsStore>( new StatsStore(stats_table_entry));
+	statsTable = std::unique_ptr<StatsStore>( new StatsStore(stats_table_entry));
 
 	uint64_t cache_line_size;	
 	if( (cache_line_size = dynamic_cast<DRAMCache*>(parent->GetTrampoline())->GetCacheLineSize())==-1)

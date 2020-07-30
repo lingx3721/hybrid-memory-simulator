@@ -91,7 +91,7 @@ void RBLA_NVMain::SetConfig( Config *conf, std::string memoryName, bool createCh
 	if(config->KeyExists("UpdateInterval"))
 		update_interval = static_cast<uint64_t>(config->GetValue("UpdateInterval"));
 	//create stats table
-	statsTable = std::auto_ptr<StatsStore>( new StatsStore(stats_table_entry));
+	statsTable = std::unique_ptr<StatsStore>( new StatsStore(stats_table_entry));
 }
 
 

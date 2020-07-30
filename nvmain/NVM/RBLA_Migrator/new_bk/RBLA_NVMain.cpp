@@ -291,7 +291,7 @@ void RBLA_NVMain::SetConfig( Config *conf, std::string memoryName, bool createCh
 		NVM::Fatal("CacheLine size must no little than 64Bytes and make sure you the memory params are right !");
 
 	//create stats table
-	statsTable = std::auto_ptr<StatsStore>( new StatsStore(stats_table_entry));
+	statsTable = std::unique_ptr<StatsStore>( new StatsStore(stats_table_entry));
     RegisterStats( );
 }
 

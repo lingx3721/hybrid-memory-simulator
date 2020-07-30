@@ -1,5 +1,5 @@
 # Automatically generated config file - do not modify
-SRC_PATH=/home/liao/chenyujie/hybrid-main/marss/qemu/roms/vgabios
+SRC_PATH=/home/ling/githubs/hybrid-memory-simulator/qemu/roms/vgabios
 CC=g++
 BCC=bcc
 CPP=cpp

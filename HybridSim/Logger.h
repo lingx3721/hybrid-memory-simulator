@@ -111,7 +111,7 @@ namespace HybridSim
 		uint64_t cur_sum_miss_latency;
 
 		uint64_t cur_sum_read_hit_latency;
-	nt64_t cur_num_mmio_remapped	uint64_t cur_sum_read_miss_latency;
+		uint64_t cur_sum_read_miss_latency;
 
 		uint64_t cur_sum_write_hit_latency;
 		uint64_t cur_sum_write_miss_latency;

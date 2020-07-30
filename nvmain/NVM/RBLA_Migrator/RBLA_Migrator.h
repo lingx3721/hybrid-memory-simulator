@@ -85,7 +85,7 @@ class RBLA_NVMain : public NVMain
 	double CalculateBenefit();
 
   private:
-	std::auto_ptr<StatsStore> statsTable;
+	std::unique_ptr<StatsStore> statsTable;
 	ncounter_t statsHit , statsMiss;
 	double statsHitRate;
 	////////////////////////////////////////
