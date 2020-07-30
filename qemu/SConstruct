@@ -47,7 +47,7 @@ env['CPPPATH'].append(ptlsim_inc_dir)
 env.Append(CCFLAGS = "-MMD -MP -DNEED_CPU_H")
 env.Append(CCFLAGS = "-DMARSS_QEMU")
 
-GCC_VERSION = subprocess.Popen([env['CC'], '-dumpversion'],
+GCC_VERSION = subprocess.Popen([env['CC'], '-dumpfullversion'],
     stdout=subprocess.PIPE).communicate()[0].strip()
 GCC_MAJOR_MINOR_VERSION = re.match(r'\d*\.\d+',GCC_VERSION).group() #e.g. returns 4.2 for 4.2.2
 
