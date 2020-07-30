@@ -1,0 +1,176 @@
+cache:
+  l1_128K:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: wb_cache
+    params: {ASSOC: 8, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 128K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l1_128K_mesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: mesi_cache
+    params: {ASSOC: 8, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 128K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l1_128K_moesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: moesi_cache
+    params: {ASSOC: 8, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 128K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l1_128K_wt:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: wt_cache
+    params: {ASSOC: 8, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 128K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l1_256K:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: wb_cache
+    params: {ASSOC: 8, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 256K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l1_32K_mesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: mesi_cache
+    params: {ASSOC: 2, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 32K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l1_32K_moesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l1_cache.conf
+    _params_merged: true
+    base: moesi_cache
+    params: {ASSOC: 2, LATENCY: 2, LINE_SIZE: 64, READ_PORTS: 2, SIZE: 32K, TAG_LATENCY: 2,
+      WRITE_PORTS: 2}
+  l2_1M_moesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: moesi_cache
+    params: {ASSOC: 8, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 1M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l2_256K_mesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: mesi_cache
+    params: {ASSOC: 8, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 256K, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l2_2M:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: wb_cache
+    params: {ASSOC: 8, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 2M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l2_2M_mesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: mesi_cache
+    params: {ASSOC: 8, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 2M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l2_2M_moesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: moesi_cache
+    params: {ASSOC: 8, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 2M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l2_2M_wt:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: wt_cache
+    params: {ASSOC: 8, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 2M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l2_512K_moesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l2_cache.conf
+    _params_merged: true
+    base: moesi_cache
+    params: {ASSOC: 4, LATENCY: 5, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 512K, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l3_1M:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l3_cache.conf
+    _params_merged: true
+    base: wb_cache
+    params: {ASSOC: 8, LATENCY: 7, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 1M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l3_2M:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l3_cache.conf
+    _params_merged: true
+    base: wb_cache
+    params: {ASSOC: 16, LATENCY: 7, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 2M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l3_32M:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l3_cache.conf
+    _params_merged: true
+    base: wb_cache
+    params: {ASSOC: 20, LATENCY: 7, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 32M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l3_32M_mesi:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l3_cache.conf
+    _params_merged: true
+    base: mesi_cache
+    params: {ASSOC: 20, LATENCY: 7, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 32M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+  l3_32M_wt:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/l3_cache.conf
+    _params_merged: true
+    base: wt_cache
+    params: {ASSOC: 20, LATENCY: 7, LINE_SIZE: 64, READ_PORTS: 1, SIZE: 32M, TAG_LATENCY: 2,
+      WRITE_PORTS: 1}
+core:
+  atom:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/atom_core.conf
+    _params_merged: true
+    base: atom
+    params: {DISPATCH_Q_SIZE: 16, ISSUE_PER_CYCLE: 2}
+  ooo:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/ooo_core.conf
+    _params_merged: true
+    base: ooo
+    params: {COMMIT_WIDTH: 4, ISSUE_WIDTH: 4}
+  ooo_2:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/ooo_core.conf
+    _params_merged: true
+    base: ooo
+    params: {COMMIT_WIDTH: 4, ISSUE_WIDTH: 6}
+machine:
+  nvmain_test_shared_l3:
+    _file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/moesi.conf
+    caches:
+    - insts: $NUMCORES
+      name_prefix: L1_I_
+      option: {private: true}
+      type: l1_32K_moesi
+    - insts: $NUMCORES
+      name_prefix: L1_D_
+      option: {private: true}
+      type: l1_32K_moesi
+    - insts: $NUMCORES
+      name_prefix: L2_
+      option: {last_private: true, private: true}
+      type: l2_512K_moesi
+    - insts: 1
+      name_prefix: L3_
+      option: {private: false}
+      type: l3_2M
+    cores:
+    - {name_prefix: ooo_, type: ooo}
+    description: public shared l3 cache with nvm memory
+    interconnects:
+    - connections:
+      - {L1_I_$: UPPER, core_$: I}
+      - {L1_D_$: UPPER, core_$: D}
+      - {L1_I_$: LOWER, L2_$: UPPER}
+      - {L1_D_$: LOWER, L2_$: UPPER2}
+      - {L3_0: LOWER, MEM_0: UPPER}
+      type: p2p
+    - connections:
+      - {DIR_0: DIRECTORY, L2_*: LOWER, L3_0: UPPER}
+      type: switch
+    memory:
+    - {insts: 1, name_prefix: DIR_, type: global_dir_cont}
+    - {insts: 1, name_prefix: MEM_, type: nvmain_cont}
+    min_contexts: 2
+memory:
+  dram_cont: {_file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/moesi.conf,
+    _params_merged: true, base: simple_dram_cont}
+  global_dir_cont: {_file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/moesi.conf,
+    _params_merged: true, base: global_dir}
+  nvmain_cont: {_file: /home/ling/githubs/hybrid-memory-simulator/config/new-machine/moesi.conf,
+    _params_merged: true, base: simple_nvm_cont}

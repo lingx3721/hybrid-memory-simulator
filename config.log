@@ -331,11 +331,11 @@ scons: Configure: ".sconf_temp/conftest_15.o" is up to date.
 scons: Configure: The original builder output was:
   |[94mCompiling [95m:: [93m.sconf_temp/conftest_15.c ==> .sconf_temp/conftest_15.o[0m
   |
-scons: Configure: Building ".sconf_temp/conftest_15" failed in a previous run and all its sources are up to date.
+scons: Configure: ".sconf_temp/conftest_15" is up to date.
 scons: Configure: The original builder output was:
   |[91mLinking Program [95m==> [93m.sconf_temp/conftest_15[0m
   |
-scons: Configure: (cached) no
+scons: Configure: (cached) yes
 
 scons: Configure: ".sconf_temp/conftest_16.cpp" is up to date.
 scons: Configure: The original builder output was:
