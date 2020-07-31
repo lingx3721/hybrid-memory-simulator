@@ -246,12 +246,12 @@ void ConfigurationParser<PTLsimConfig>::reset() {
   // DRAMSim2 options
   dramsim_device_ini_file = "ini/DDR3_micron_8M_8B_x16_sg15.ini";
   dramsim_system_ini_file = "system.ini";
-  dramsim_pwd = "/home/liao/chenyujie/hybrid-main/marss/DRAMSim2";
+  dramsim_pwd = "/home/ling/hybrid-memory-simulator/DRAMSim2";
   dramsim_results_dir_name = "MARSS";
   #endif
 
   #ifdef NVMAIN
-  nvmain_config_path = "/home/liao/chenyujie/hybrid-main/marss/nvmain/Config/2D_DRAM.config";
+  nvmain_config_path = "/home/ling/hybrid-memory-simulator/nvmain/Config/2D_DRAM.config";
   #endif
 }
 
